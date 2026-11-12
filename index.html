@@ -163,12 +163,22 @@
   .badge .s{color:#F2B705;letter-spacing:2px;font-size:15px}
   .badge b{display:block;font-size:18px;line-height:1.25}
   .badge span{font-size:14px;color:#CFE3DA}
+  .badge.rev{background:#fff;border-color:#fff}
+  .badge.rev b{color:#12332b}
+  .badge .lg{height:24px;width:auto;display:block;margin-bottom:8px}
+  .rate img{height:22px;width:auto;vertical-align:-5px;margin:0 6px 0 0}
+  .rate .r1{display:inline-block;white-space:nowrap;margin:0 24px 8px 0}
   .press{background:#fff;border-bottom:1px solid var(--line)}
-  .press .wrap{display:flex;gap:30px;align-items:center;padding-top:18px;padding-bottom:18px;overflow-x:auto;white-space:nowrap}
-  .press em{font-style:normal;font-weight:800;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+  .press{padding:20px 0 22px;text-align:center}
+  .marquee{overflow:hidden;margin-top:14px;-webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
+  .track{display:flex;gap:56px;align-items:center;width:max-content;white-space:nowrap;animation:slide 60s linear infinite}
+  .marquee:hover .track{animation-play-state:paused}
+  @keyframes slide{to{transform:translateX(-50%)}}
+  @media(prefers-reduced-motion:reduce){.track{animation:none;flex-wrap:wrap;justify-content:center;width:auto;gap:16px 28px}.track [aria-hidden]{display:none}}
+  .press em{display:block;font-style:normal;font-weight:800;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
   .press span{font-weight:800;color:#3b3b3b;font-size:19px}
   .press img{height:40px;width:auto;border-radius:6px;display:block;flex:none}
-  @media(max-width:700px){.press .wrap{flex-wrap:wrap;white-space:normal;gap:12px 16px}.press em{flex-basis:100%}.press img{height:30px}.press span{font-size:16px}}
+  @media(max-width:700px){.track{gap:36px}.press img{height:32px}.press span{font-size:17px}}
   .help .head,.fees .head{max-width:680px;margin-bottom:34px}
   .help .head p,.fees .head p{color:var(--muted);margin-top:12px}
   .card-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
@@ -284,17 +294,17 @@
   </div>
   <div class="wrap">
     <div class="badges">
-      <div class="badge"><div class="s">★★★★★</div><b>4.8 out of 5</b><span>Google reviews</span></div>
-      <div class="badge"><div class="s">★★★★☆</div><b>4.2 out of 5</b><span>Trustpilot reviews</span></div>
+      <div class="badge rev"><img class="lg" src="img/google.png" alt="Google"><div class="s">★★★★★</div><b>4.8 out of 5</b></div>
+      <div class="badge rev"><img class="lg" src="img/trustpilot.png" alt="Trustpilot"><div class="s">★★★★☆</div><b>4.2 out of 5</b></div>
       <div class="badge"><b>2 awards won</b><span>Cannabis Industry Awards 2026</span></div>
       <div class="badge"><b>Checked by HIW</b><span>Healthcare Inspectorate Wales, the health regulator</span></div>
     </div>
   </div>
 </section>
 
-<div class="press"><div class="wrap">
-  <em>As featured in</em><img src="img/press-bbc.png" alt="BBC"><img src="img/press-itv.png" alt="ITV"><span>The Independent</span><img src="img/press-walesonline.png" alt="WalesOnline"><img src="img/press-leafie.png" alt="Leafie">
-</div></div>
+<div class="press"><em>As featured in</em>
+  <div class="marquee"><div class="track"><img src="img/press-bbc.png" alt="BBC"><img src="img/press-itv.png" alt="ITV"><span>The Independent</span><img src="img/press-walesonline.png" alt="WalesOnline"><img src="img/press-leafie.png" alt="Leafie"><img src="img/press-bbc.png" alt="BBC"><img src="img/press-itv.png" alt="ITV"><span>The Independent</span><img src="img/press-walesonline.png" alt="WalesOnline"><img src="img/press-leafie.png" alt="Leafie"><img src="img/press-bbc.png" alt="BBC"><img src="img/press-itv.png" alt="ITV"><span>The Independent</span><img src="img/press-walesonline.png" alt="WalesOnline"><img src="img/press-leafie.png" alt="Leafie"><img src="img/press-bbc.png" alt="BBC"><img src="img/press-itv.png" alt="ITV"><span>The Independent</span><img src="img/press-walesonline.png" alt="WalesOnline"><img src="img/press-leafie.png" alt="Leafie"><img src="img/press-bbc.png" aria-hidden="true" alt="BBC"><img src="img/press-itv.png" aria-hidden="true" alt="ITV"><span>The Independent</span><img src="img/press-walesonline.png" aria-hidden="true" alt="WalesOnline"><img src="img/press-leafie.png" aria-hidden="true" alt="Leafie"><img src="img/press-bbc.png" aria-hidden="true" alt="BBC"><img src="img/press-itv.png" aria-hidden="true" alt="ITV"><span>The Independent</span><img src="img/press-walesonline.png" aria-hidden="true" alt="WalesOnline"><img src="img/press-leafie.png" aria-hidden="true" alt="Leafie"><img src="img/press-bbc.png" aria-hidden="true" alt="BBC"><img src="img/press-itv.png" aria-hidden="true" alt="ITV"><span>The Independent</span><img src="img/press-walesonline.png" aria-hidden="true" alt="WalesOnline"><img src="img/press-leafie.png" aria-hidden="true" alt="Leafie"><img src="img/press-bbc.png" aria-hidden="true" alt="BBC"><img src="img/press-itv.png" aria-hidden="true" alt="ITV"><span>The Independent</span><img src="img/press-walesonline.png" aria-hidden="true" alt="WalesOnline"><img src="img/press-leafie.png" aria-hidden="true" alt="Leafie"></div></div>
+</div>
 
 <section class="help" id="help">
   <div class="wrap">
@@ -398,7 +408,7 @@
       <div class="rev"><div class="stars">★★★★★</div><p>"Every member of staff I have dealt with has been professional, polite and helpful… I feel safe in their hands, valued."</p><div class="who">S. May, Trustpilot, February 2026</div></div>
       <div class="rev"><div class="stars">★★★★★</div><p>"I feel I can be honest about my situation without judgement or stigma being attached."</p><div class="who">Dai M., Trustpilot, October 2025</div></div>
     </div>
-    <p class="rate">Rated 4.8 out of 5 on Google and 4.2 out of 5 on Trustpilot. <a href="#">Read all our reviews</a></p>
+    <p class="rate"><span class="r1"><img src="img/google.png" alt="Google"> 4.8 out of 5</span><span class="r1"><img src="img/trustpilot.png" alt="Trustpilot"> 4.2 out of 5</span><a href="#">Read all our reviews</a></p>
     <p style="margin-top:6px;color:var(--muted);font-size:14px">Short quotes from real Trustpilot reviews of Cannabis Clinic Cardiff.</p>
   </div>
 </section>
