@@ -166,7 +166,9 @@
   .press{background:#fff;border-bottom:1px solid var(--line)}
   .press .wrap{display:flex;gap:30px;align-items:center;padding-top:18px;padding-bottom:18px;overflow-x:auto;white-space:nowrap}
   .press em{font-style:normal;font-weight:800;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
-  .press span{font-weight:800;color:#B9B4A8;font-size:19px}
+  .press span{font-weight:800;color:#3b3b3b;font-size:19px}
+  .press img{height:40px;width:auto;border-radius:6px;display:block;flex:none}
+  @media(max-width:700px){.press .wrap{flex-wrap:wrap;white-space:normal;gap:12px 16px}.press em{flex-basis:100%}.press img{height:30px}.press span{font-size:16px}}
   .help .head,.fees .head{max-width:680px;margin-bottom:34px}
   .help .head p,.fees .head p{color:var(--muted);margin-top:12px}
   .card-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
@@ -291,7 +293,7 @@
 </section>
 
 <div class="press"><div class="wrap">
-  <em>As featured in</em><span>BBC</span><span>ITV</span><span>The Independent</span><span>WalesOnline</span><span>Leafie</span>
+  <em>As featured in</em><img src="img/press-bbc.png" alt="BBC"><img src="img/press-itv.png" alt="ITV"><span>The Independent</span><img src="img/press-walesonline.png" alt="WalesOnline"><img src="img/press-leafie.png" alt="Leafie">
 </div></div>
 
 <section class="help" id="help">
