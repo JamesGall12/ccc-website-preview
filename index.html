@@ -171,14 +171,15 @@
   .press{background:#fff;border-bottom:1px solid var(--line)}
   .press{padding:20px 0 22px;text-align:center}
   .marquee{overflow:hidden;margin-top:14px;-webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
-  .track{display:flex;gap:56px;align-items:center;width:max-content;white-space:nowrap;animation:slide 60s linear infinite}
+  .track{display:flex;width:max-content;animation:slide 45s linear infinite}
+  .set{display:flex;flex:none;align-items:center;justify-content:space-around;gap:48px;min-width:100vw;padding:0 24px;white-space:nowrap}
   .marquee:hover .track{animation-play-state:paused}
   @keyframes slide{to{transform:translateX(-50%)}}
-  @media(prefers-reduced-motion:reduce){.track{animation:none;flex-wrap:wrap;justify-content:center;width:auto;gap:16px 28px}.track [aria-hidden]{display:none}}
+  @media(prefers-reduced-motion:reduce){.track{animation:none;width:auto}.set{flex-wrap:wrap;justify-content:center;min-width:0;gap:16px 28px}.set[aria-hidden]{display:none}}
   .press em{display:block;font-style:normal;font-weight:800;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
   .press span{font-weight:800;color:#3b3b3b;font-size:19px}
   .press img{height:40px;width:auto;border-radius:6px;display:block;flex:none}
-  @media(max-width:700px){.track{gap:36px}.press img{height:32px}.press span{font-size:17px}}
+  @media(max-width:700px){.set{gap:34px;padding:0 17px}.press img{height:32px}.press span{font-size:17px}}
   .help .head,.fees .head{max-width:680px;margin-bottom:34px}
   .help .head p,.fees .head p{color:var(--muted);margin-top:12px}
   .card-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
@@ -303,7 +304,7 @@
 </section>
 
 <div class="press"><em>As featured in</em>
-  <div class="marquee"><div class="track"><img src="img/press-bbc.png" alt="BBC"><img src="img/press-itv.png" alt="ITV"><span>The Independent</span><img src="img/press-walesonline.png" alt="WalesOnline"><img src="img/press-leafie.png" alt="Leafie"><img src="img/press-bbc.png" alt="BBC"><img src="img/press-itv.png" alt="ITV"><span>The Independent</span><img src="img/press-walesonline.png" alt="WalesOnline"><img src="img/press-leafie.png" alt="Leafie"><img src="img/press-bbc.png" alt="BBC"><img src="img/press-itv.png" alt="ITV"><span>The Independent</span><img src="img/press-walesonline.png" alt="WalesOnline"><img src="img/press-leafie.png" alt="Leafie"><img src="img/press-bbc.png" alt="BBC"><img src="img/press-itv.png" alt="ITV"><span>The Independent</span><img src="img/press-walesonline.png" alt="WalesOnline"><img src="img/press-leafie.png" alt="Leafie"><img src="img/press-bbc.png" aria-hidden="true" alt="BBC"><img src="img/press-itv.png" aria-hidden="true" alt="ITV"><span>The Independent</span><img src="img/press-walesonline.png" aria-hidden="true" alt="WalesOnline"><img src="img/press-leafie.png" aria-hidden="true" alt="Leafie"><img src="img/press-bbc.png" aria-hidden="true" alt="BBC"><img src="img/press-itv.png" aria-hidden="true" alt="ITV"><span>The Independent</span><img src="img/press-walesonline.png" aria-hidden="true" alt="WalesOnline"><img src="img/press-leafie.png" aria-hidden="true" alt="Leafie"><img src="img/press-bbc.png" aria-hidden="true" alt="BBC"><img src="img/press-itv.png" aria-hidden="true" alt="ITV"><span>The Independent</span><img src="img/press-walesonline.png" aria-hidden="true" alt="WalesOnline"><img src="img/press-leafie.png" aria-hidden="true" alt="Leafie"><img src="img/press-bbc.png" aria-hidden="true" alt="BBC"><img src="img/press-itv.png" aria-hidden="true" alt="ITV"><span>The Independent</span><img src="img/press-walesonline.png" aria-hidden="true" alt="WalesOnline"><img src="img/press-leafie.png" aria-hidden="true" alt="Leafie"></div></div>
+  <div class="marquee"><div class="track"><div class="set"><img src="img/press-bbc.png" alt="BBC"><img src="img/press-itv.png" alt="ITV"><span>The Independent</span><img src="img/press-walesonline.png" alt="WalesOnline"><img src="img/press-cannabishealth.png" alt="Cannabis Health"><img src="img/press-leafie.png" alt="Leafie"><img src="img/press-businessofcannabis.png" alt="Business of Cannabis"></div><div class="set" aria-hidden="true"><img src="img/press-bbc.png" alt="BBC"><img src="img/press-itv.png" alt="ITV"><span>The Independent</span><img src="img/press-walesonline.png" alt="WalesOnline"><img src="img/press-cannabishealth.png" alt="Cannabis Health"><img src="img/press-leafie.png" alt="Leafie"><img src="img/press-businessofcannabis.png" alt="Business of Cannabis"></div></div></div>
 </div>
 
 <section class="help" id="help">
